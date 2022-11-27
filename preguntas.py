@@ -11,22 +11,24 @@ import pandas as pd
 from sklearn import datasets
 
 
+
 def pregunta_01():
     """
     Complete el código presentado a continuación.
     """
-
+    
     # Cargue el dataset digits
-    digits = ____.____()
-
+    digits = datasets.load_digits(as_frame=True)
+    
     # Imprima los nombres de la variable target del dataset
-    print(____.____)
-
+    print(digits.target_names)
+    
     # Imprima las dimensinoes de matriz de datos
-    print(____.____.____)
-
+    print(digits.data.shape)
+    
     # Imprima las dimensiones del vector de salida
-    print(____.____.____)
+    print(digits.target.shape)
+
 
 
 def pregunta_02():
